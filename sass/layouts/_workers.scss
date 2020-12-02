@@ -1,0 +1,91 @@
+/*workers*/
+
+.comand {
+  padding-bottom: 50px;
+}
+.workers {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: var(--bgc-logo);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  &-team {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &-team .item + .item {
+    margin-left: 30px;
+  }
+  &-list {
+    max-height: 428px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--background-header-color);
+  }
+  &-list p {
+    margin-top: 10px;
+
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.22;
+  }
+}
+.name-title {
+  margin-top: 30px;
+  color: var(--second-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+
+  margin-top: 16px;
+  margin-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
+
+  &-icon {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 0;
+    border: 0;
+    background-color: var(--background-header-color);
+    transition: color var(--transition-duration),
+      background-color var(--transition-duration)
+        var(--transition-timing-function);
+  }
+  & .item + .item {
+    margin-left: 10px;
+  }
+  & &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-icon-item {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+  }
+  &-icon:hover,
+  &-icon:focus {
+    background-color: var(--hover-text-color);
+  }
+  &-icon:hover &-icon-item,
+  &-icon:focus &-icon-item {
+    fill: var(--background-header-color);
+  }
+}

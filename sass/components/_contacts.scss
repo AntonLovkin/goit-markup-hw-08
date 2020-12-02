@@ -1,0 +1,66 @@
+/*contacts*/
+.contacts {
+  display: flex;
+  padding: 0;
+  margin-left: auto;
+  background-color: inherit;
+
+  & .item {
+    display: inline-flex;
+    font-size: 14px;
+    line-height: 1.14;
+    align-items: line;
+  }
+
+  & .item + .item {
+    margin-left: 30px;
+  }
+}
+.mail {
+  display: inline-flex;
+  align-items: center;
+  color: var(--main-text-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-text-color);
+    transition: color var(--transition-duration);
+  }
+}
+
+.phone {
+  display: inline-flex;
+  align-items: center;
+  color: var(--main-text-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-text-color);
+    transition: color var(--transition-duration);
+  }
+}
+.icon-mail {
+  display: flex;
+  fill: var(--main-text-color);
+  padding-left: 0px;
+  margin-right: 10px;
+
+  .mail:hover &,
+  .mail:focus & {
+    fill: var(--hover-text-color);
+  }
+}
+
+.icon-smartphone {
+  display: flex;
+  fill: var(--main-text-color);
+  padding-left: 0px;
+  margin-right: 10px;
+
+  .phone:hover &,
+  .phone:focus & {
+    fill: var(--hover-text-color);
+  }
+}

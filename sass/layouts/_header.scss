@@ -1,0 +1,14 @@
+/*header*/
+.header {
+  background-color: var(--background-header-color);
+  color: var(--second-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+}

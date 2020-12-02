@@ -1,0 +1,30 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveServer.settings.port": 1235,
+    "liveSassCompile.settings.autoprefix": null
+}
+// {
+//     "editor.fontSize": 16,
+//     "workbench.colorTheme": "One Dark Pro",
+//     "workbench.iconTheme": "vscode-icons",
+//     "files.autoSave": "onFocusChange",
+//     "editor.formatOnPaste": true,
+//     "editor.formatOnSave": true,
+//     "editor.formatOnType": true
+// }

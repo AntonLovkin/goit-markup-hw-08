@@ -1,0 +1,118 @@
+.form-field {
+  position: relative;
+}
+
+.form-input {
+  font: inherit;
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  margin-bottom: 10px;
+}
+
+.form-input:focus {
+  border-color: #2196f3;
+  outline: #2196f3;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.icon-input {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  transform: translateY(-25%);
+  margin-left: 15px;
+  fill: #212121;
+
+  .form-input:focus ~ & {
+    fill: var(--hover-text-color);
+  }
+}
+.form-textarea {
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 120px;
+  resize: none;
+  margin: 0;
+}
+.form-field textarea::placeholder {
+  font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-checkbox {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 14px;
+
+  font-size: 14px;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
+  color: #757575;
+  transform: var(--transition-duration) var(--transition-timing-function);
+
+  & a {
+    color: var(--hover-text-color);
+    margin-left: 5px;
+  }
+}
+
+.checkbox {
+  position: absolute;
+}
+.icon-checkbox {
+  display: inline-block;
+  margin-right: 7px;
+  height: 15px;
+  width: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+
+  .checkbox:checked + & {
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: var(--hover-text-color);
+    background-color: var(--hover-text-color);
+  }
+}
+.send-btn {
+  margin-left: 124px;
+
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 0px;
+
+  color: var(--hero-title-color);
+  background-color: var(--hover-text-color);
+
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: color var(--transition-duration),
+    background-color var(--transition-timing-function);
+}

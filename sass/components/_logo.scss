@@ -1,0 +1,18 @@
+/*logo*/
+.logo {
+  color: var(--second-text-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  &:focus {
+    color: var(--second-text-color);
+  }
+  &-web {
+    color: var(--hover-text-color);
+  }
+}
