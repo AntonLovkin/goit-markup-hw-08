@@ -6,7 +6,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  border: 2px solid tomato;
 }
 
 body {
@@ -14,7 +13,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: var(--main-text-color);
-  background-color: var(--main-background-color);
+  // background-color: var(--main-background-color);
 }
 
 .mardgin-reset {
@@ -36,24 +35,13 @@ img {
 .container {
   margin-right: auto;
   margin-left: auto;
-  width: 100%;
-
+  width: 480px;
   padding-right: 15px;
   padding-left: 15px;
-
-  @media screen and (max-width: 477px) {
-    max-width: 450px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
 }
 
-@media screen and (max-width: 768px) {
-  .mobile-none {
-    display: none;
-  }
-}
+// @media screen and (min-width: 480px) {
+//   .container {
+//     width: 768px;
+//   }
+// }
