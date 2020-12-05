@@ -1,11 +1,16 @@
 /*workers*/
 
 .comand {
-  padding-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
+    margin-bottom: 0;
+  }
 }
 .workers {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: var(--bgc-logo);
 
   font-size: 16px;
@@ -14,15 +19,46 @@
   letter-spacing: 0.03em;
   text-align: center;
 
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   &-team {
-    display: flex;
     margin-top: 0;
     margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-left: -30px;
+      margin-top: -30px;
+      padding: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      margin-bottom: 94px;
+    }
   }
   &-team .item + .item {
-    margin-left: 30px;
+    // margin-left: 30px;
   }
   &-list {
+    margin-bottom: 30px;
+    max-width: 450px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      width: 354px;
+
+      margin-left: 30px;
+      margin-top: 30px;
+
+      flex-basis: calc(100% / 2 - 30px);
+    }
+
     max-height: 428px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -49,9 +85,9 @@
 
 .social {
   display: flex;
-
+  justify-content: center;
   margin-top: 16px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   padding-right: 32px;
   padding-left: 32px;
 
