@@ -4,14 +4,33 @@
   background-color: var(--background-color-footer);
 }
 .footer {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   line-height: 1.5;
 
   background-color: var(--background-color-footer);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.list.mobile {
+  display: block;
+  text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 78px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .logo-white {
+  display: block;
   color: var(--footer-color);
   font-family: "Raleway";
   font-size: 26px;
@@ -26,14 +45,17 @@
   font-family: Roboto;
   font-size: 14px;
 
-  text-align: left;
+  // text-align: left;
 }
 .footer-mail,
 .footer-phone {
-  margin-top: 9px;
+  margin-top: 8px;
   display: block;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 9px;
+  }
 }
 .footer ul {
   margin-top: 0;
@@ -41,7 +63,9 @@
 }
 
 .join {
-  margin-left: 70px;
+  display: block;
+  text-align: center;
+
   margin-top: 0;
   margin-bottom: 0;
 
@@ -53,12 +77,26 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  @media screen and (min-width: 768px) {
+    margin-left: 168px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .text-footer {
   padding: 0;
-  margin-top: 12px;
+  margin-top: 60px;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    text-align: left;
+  }
 }
 
 .join ul {
@@ -67,7 +105,7 @@
 
 .join-list {
   display: flex;
-
+  justify-content: center;
   margin-top: 16px;
   margin-bottom: 30px;
   padding-right: 32px;
@@ -103,4 +141,15 @@
   height: 20px;
 
   fill: var(--background-header-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .join.input p {
+    margin-top: 60px;
+  }
+}
+.join.input {
+  @media screen and (min-width: 1200px) {
+    margin-left: 102px;
+  }
 }

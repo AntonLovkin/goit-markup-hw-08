@@ -1,13 +1,22 @@
-.join.input {
-  margin-left: 102px;
+.form-mobile {
+  position: relative;
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
-
 .join-input {
-  margin-right: 12px;
-  background-color: var(--background-color-footer);
-  padding-left: 16px;
-  width: 358px;
   height: 50px;
+
+  padding-left: 16px;
+  margin-right: auto;
+
+  background-color: var(--background-color-footer);
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -17,9 +26,26 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   overflow: border var(--hover-text-color);
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 .join-button {
-  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  display: block;
+
   height: 50px;
   // width: 200px;
   padding-left: 29px;
@@ -27,7 +53,6 @@
   padding-bottom: 10px;
   fill: var(--transition-duration) var(--transition-timing-function);
 
-  display: inline-block;
   min-width: 200px;
 
   border-radius: 4px;
@@ -46,6 +71,15 @@
   text-decoration: none;
   transition: color var(--transition-duration),
     background-color var(--transition-timing-function);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    // display: inline-block;
+  }
+  @media screen and (min-width: 1200px) {
+    right: 0;
+    transform: translateX(100%);
+  }
 }
 
 .icon-send {

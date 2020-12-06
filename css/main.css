@@ -376,16 +376,29 @@ img {
   transition: color var(--transition-duration), background-color var(--transition-timing-function);
 }
 
-.join.input {
-  margin-left: 102px;
+.form-mobile {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .form-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-mobile {
+    display: flex;
+  }
 }
 
 .join-input {
-  margin-right: 12px;
-  background-color: var(--background-color-footer);
-  padding-left: 16px;
-  width: 358px;
   height: 50px;
+  padding-left: 16px;
+  margin-right: auto;
+  background-color: var(--background-color-footer);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -396,14 +409,37 @@ img {
   overflow: border var(--hover-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .join-input {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join-input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-input {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
 .join-button {
-  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  display: block;
   height: 50px;
   padding-left: 29px;
   padding-top: 10px;
   padding-bottom: 10px;
   fill: var(--transition-duration) var(--transition-timing-function);
-  display: inline-block;
   min-width: 200px;
   border-radius: 4px;
   border: 0px;
@@ -418,6 +454,19 @@ img {
   letter-spacing: 0.06em;
   text-decoration: none;
   transition: color var(--transition-duration), background-color var(--transition-timing-function);
+}
+
+@media screen and (min-width: 768px) {
+  .join-button {
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-button {
+    right: 0;
+    transform: translateX(100%);
+  }
 }
 
 .icon-send {
@@ -961,14 +1010,44 @@ img {
 }
 
 .footer {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   line-height: 1.5;
   background-color: var(--background-color-footer);
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    flex-wrap: nowrap;
+  }
+}
+
+.list.mobile {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list.mobile {
+    margin-left: 78px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list.mobile {
+    text-align: left;
+  }
+}
+
 .logo-white {
+  display: block;
   color: var(--footer-color);
   font-family: "Raleway";
   font-size: 26px;
@@ -983,15 +1062,21 @@ img {
   color: var(--footer-color);
   font-family: Roboto;
   font-size: 14px;
-  text-align: left;
 }
 
 .footer-mail,
 .footer-phone {
-  margin-top: 9px;
+  margin-top: 8px;
   display: block;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-mail,
+  .footer-phone {
+    margin-top: 9px;
+  }
 }
 
 .footer ul {
@@ -1000,7 +1085,8 @@ img {
 }
 
 .join {
-  margin-left: 70px;
+  display: block;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 0;
   font-family: Roboto;
@@ -1012,10 +1098,35 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .join {
+    margin-left: 168px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+  }
+}
+
 .text-footer {
   padding: 0;
-  margin-top: 12px;
+  margin-top: 60px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .text-footer {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text-footer {
+    margin-top: 12px;
+    text-align: left;
+  }
 }
 
 .join ul {
@@ -1024,6 +1135,7 @@ img {
 
 .join-list {
   display: flex;
+  justify-content: center;
   margin-top: 16px;
   margin-bottom: 30px;
   padding-right: 32px;
@@ -1059,6 +1171,18 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--background-header-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .join.input p {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join.input {
+    margin-left: 102px;
+  }
 }
 
 /*portfolio*/
