@@ -16,7 +16,7 @@
             <nav>
                 <ul class="site-nav list">
                     <li class="item">
-                        <a href="./index.html" class="link">Студия</a></li>
+                        <a href="./index.html" class="link ">Студия</a></li>
                     <li class="item">
                         <a href="./portfolio.html" class="link current">Портфолио</a></li>
                     <li class="item">
@@ -40,6 +40,38 @@
                 </li>
             </ul>
         </div>
+        <svg class="mobile-menu-btn">
+            <use class="menu-open" href="./images/sprite.svg#menu-button"></use>
+            <use class="menu-close" href="./images/sprite.svg#close-menu"></use>
+        </svg>
+        <div class="mobile-menu">
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item">
+                    <a href="./index.html" class="mobile-menu-link link">Студия</a></li>
+                <li class="mobile-menu-item">
+                    <a href="./portfolio.html" class="mobile-menu-link link current">Портфолио</a></li>
+                <li class="mobile-menu-item">
+                    <a href="#contacts" class="mobile-menu-link link">Контакты</a></li>
+            </ul>
+    
+            <ul class="contacts-mobile-list">
+                <li class="contacts-menu-item">
+                    <a class="mail link" href="mailto:info@devstudio.com">
+                        <svg class="icon-mail" style="height: 16px; width: 16px">
+                            <use href="./images/sprite.svg#mail">
+                            </use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="contacts-menu-item">
+                    <a class="phone link" href="tel:+380961111111">
+                        <svg class="icon-smartphone" style="height: 16px; width: 16px">
+                            <use href="./images/sprite.svg#smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+    
+        </div>
+    
     </header>
 
     <div class="main">
@@ -182,7 +214,7 @@
     <footer class="contact" id="contacts">
         <section class="footer container">
             <h2 class="mardgin-reset visually-hidden">Контакты</h2>
-            <ul class="list">
+            <ul class="list mobile">
                 <li><a class="logo-white link" href="./index.html"><span class="logo-web">Web</span>Studio</a></li>
                 <li><a class="address link" href="https://goo.gl/maps/WnVNhJ2JsG3J3h6x5" target="_blank"
                         rel="noopener noreferer">
@@ -225,7 +257,7 @@
             </div>
             <div class="join input">
                 <p class="text-footer">Подпишитесь на рассылку</p>
-                <form>
+                <form class="form-mobile">
                     <input class="join-input" name="email" type="email" placeholder="E-mail" required>
                     <button class="join-button">
                         <svg class="icon-send">

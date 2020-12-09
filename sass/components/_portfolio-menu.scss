@@ -1,7 +1,14 @@
 /*portfolio*/
 .head {
-  display: flex;
   justify-content: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 50px;
+  }
+}
+
+.head > .item {
+  display: inline-block;
 }

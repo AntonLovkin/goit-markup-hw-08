@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-list">
       <a class="logo link" href="./index.html"><span class="logo-web">Web</span>Studio</a>
       <nav>
@@ -42,13 +42,45 @@
         </li>
       </ul>
       </div>
-    </header> -->
+      <svg class="mobile-menu-btn" >
+        <use class="menu-open" href="./images/sprite.svg#menu-button"></use>
+        <use class="menu-close" href="./images/sprite.svg#close-menu"></use>
+      </svg>
+      <div class="mobile-menu">
+        <ul class="mobile-menu-list" >
+          <li class="mobile-menu-item">
+            <a href="./index.html" class="mobile-menu-link link current">Студия</a></li>
+          <li class="mobile-menu-item">
+            <a href="./portfolio.html" class="mobile-menu-link link">Портфолио</a></li>
+          <li class="mobile-menu-item">
+            <a href="#contacts" class="mobile-menu-link link">Контакты</a></li>
+        </ul>
+
+        <ul class="contacts-mobile-list">
+          <li class="contacts-menu-item">
+            <a class="mail link" href="mailto:info@devstudio.com">
+              <svg class="icon-mail" style="height: 16px; width: 16px">
+                <use href="./images/sprite.svg#mail">
+                </use>
+              </svg>info@devstudio.com</a>
+          </li>
+          <li class="contacts-menu-item">
+            <a class="phone link" href="tel:+380961111111">
+              <svg class="icon-smartphone" style="height: 16px; width: 16px">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>+38 096 111 11 11</a>
+          </li>
+        </ul>
+        
+      </div>
+      
+    </header>
 
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
        <h1 class="mardgin-reset hero-title">Эффективные решения <br> для вашего бизнеса</h1>
        <button data-modal-open class="hero-button">Заказать услугу</button>
-      </section>
+      </section> -->
       
       <div class="working">
         <section class="container">
@@ -105,11 +137,14 @@
           <h2 class="mardgin-reset section-title comand">Наша команда</h2>
           <ul class="workers-team list">
         <li class="workers-list item">
-          <picture>
-            <source srcset="./images/HW#8_mobile/worker_1.jpg 1x" media="" type="" />
-            <source srcset="" media="" type="" />
-            <!-- <img src="./images/img(3).jpg" alt="Игорь Демьяненко" width="270" height="260" /> -->
-          </picture>
+          
+            
+            <!-- <img src="./images/tablet/tablet/worker1.jpg" alt="Игорь Демьяненко" media="(min-width=768px)" /> -->
+
+          
+          <!-- <img src="./images/img(3).jpg" alt="Игорь Демьяненко" width="270" height="260" /> -->
+            <!-- <img src="./images/tablet/tablet/worker1.jpg" alt="Игорь Демьяненко" media="(min-width=768px)" />
+          <img src="./images/mobile/mobile/worker1.jpg" alt="Игорь Демьяненко" media="(min-width=768px)" /> -->
           
           <h3 class="mardgin-reset name-title">Игорь Демьяненко</h3>
           <p class="mardgin-reset">Product Designer</p>
