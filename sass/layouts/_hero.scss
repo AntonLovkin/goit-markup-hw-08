@@ -1,63 +1,132 @@
 /*hero*/
 .hero {
-  width: 480px;
-
+  // width: 480px;
+  text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
 
-  margin-left: auto;
-  margin-right: auto;
+  height: 400px;
+  width: 100%;
 
-  background-color: var(--background-color-footer);
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url(../images/hero.jpg);
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
 
-  text-align: center;
-
-  &-title {
-    margin-top: 0;
-    margin-bottom: 30px;
-
-    color: var(--hero-title-color);
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.65;
-
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../../images/mobile/mobile/Hero.jpg);
+    background-size: 480px 400px;
   }
-  &-button {
-    display: inline-block;
-    min-width: 200px;
-    padding: 10px 32px;
-    border-radius: 4px;
-    border: 0px;
-
-    color: var(--hero-title-color);
-    background-color: var(--hover-text-color);
-
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-decoration: none;
-    transition: color var(--transition-duration),
-      background-color var(--transition-timing-function);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../../images/mobile/mobile/Hero@2x.jpg);
+    }
   }
-
-  &:hover,
-  &:focus {
-    background-color: var(--background-header-color);
-    color: var(--hover-text-color);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../../images/tablet/tablet/Hero.jpg);
+    background-size: 768px 400px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../../images/tablet/tablet/Hero@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../../images/hero.jpg);
+    background-size: 1600px 600px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../../images/desktop/hero@2x.jpg);
+    }
   }
 }
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--hero-title-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.65;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 0px;
+
+  color: var(--hero-title-color);
+  background-color: var(--hover-text-color);
+
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: color var(--transition-duration),
+    background-color var(--transition-timing-function);
+}
+
+.hero:hover,
+.hero:focus {
+  background-color: var(--background-header-color);
+  color: var(--hover-text-color);
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     width: 768px;

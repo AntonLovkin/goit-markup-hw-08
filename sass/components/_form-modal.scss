@@ -59,14 +59,18 @@
   align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
-  margin-left: 14px;
 
-  font-size: 14px;
-  line-height: 1.75;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   transform: var(--transition-duration) var(--transition-timing-function);
 
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.75;
+    margin-left: 14px;
+  }
   & a {
     color: var(--hover-text-color);
     margin-left: 5px;
@@ -93,9 +97,10 @@
   }
 }
 .send-btn {
-  margin-left: 124px;
-
-  display: inline-block;
+  // margin-left: 124px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
