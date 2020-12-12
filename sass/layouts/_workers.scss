@@ -39,7 +39,7 @@
 
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
-      margin-bottom: 94px;
+      // margin-bottom: 94px;
     }
   }
   // &-team .item + .item {
@@ -47,7 +47,9 @@
   // }
   &-list {
     margin-bottom: 30px;
-    // max-width: 450px;
+    @media screen and (max-width: 767px) {
+      max-width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
