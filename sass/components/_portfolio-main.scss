@@ -164,11 +164,17 @@
 
 .overlay-img {
   position: relative;
-  // height: 294px;
   overflow: hidden;
+
   height: 294px;
+  // width: 354px;
 }
 .overlay-img > .img {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
   @media screen and (min-width: 768px) {
   }
 }
