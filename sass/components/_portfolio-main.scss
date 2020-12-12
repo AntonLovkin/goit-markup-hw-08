@@ -135,15 +135,15 @@
 
 .list-item {
   display: block;
-  border: 1px solid;
+  // border: 1px solid;
   width: 100%;
   max-width: 450px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     &:not(:last-child) {
@@ -163,8 +163,13 @@
 
 .overlay-img {
   position: relative;
-  height: 294px;
+  // height: 294px;
   overflow: hidden;
+  height: 294px;
+}
+.overlay-img > .img {
+  @media screen and (min-width: 768px) {
+  }
 }
 .overlay {
   position: absolute;

@@ -99,13 +99,15 @@ img {
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .logo {
     font-size: 26px;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -723,14 +725,14 @@ img {
 @media screen and (max-width: 767px) {
   .hero {
     max-width: 480px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(../../images/mobile/mobile/Hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(./../images/mobile/mobile/Hero.jpg);
     background-size: 480px 400px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(../../images/mobile/mobile/Hero@2x.jpg);
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(./../images/mobile/mobile/Hero@2x.jpg);
   }
 }
 
@@ -739,14 +741,14 @@ img {
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(../../images/tablet/tablet/Hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(./../images/tablet/tablet/Hero.jpg);
     background-size: 768px 400px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(../../images/tablet/tablet/Hero@2x.jpg);
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(./../images/tablet/tablet/Hero@2x.jpg);
   }
 }
 
@@ -756,14 +758,14 @@ img {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(../../images/hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(./../images/hero.jpg);
     background-size: 1600px 600px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(../../images/desktop/hero@2x.jpg);
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(./../images/desktop/hero@2x.jpg);
   }
 }
 
@@ -989,7 +991,6 @@ img {
 }
 
 .img {
-  display: none;
   margin-top: 0px;
 }
 
@@ -1057,8 +1058,6 @@ img {
 
 .workers-list {
   margin-bottom: 30px;
-  max-width: 450px;
-  max-height: 428px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--background-header-color);
@@ -1095,9 +1094,13 @@ img {
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  padding-bottom: 30px;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social {
+    padding-bottom: 30px;
+  }
 }
 
 .social-icon {
@@ -1540,18 +1543,17 @@ img {
 
 .list-item {
   display: block;
-  border: 1px solid;
   width: 100%;
   max-width: 450px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .list-item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .list-item {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
@@ -1576,8 +1578,8 @@ img {
 
 .overlay-img {
   position: relative;
-  height: 294px;
   overflow: hidden;
+  height: 294px;
 }
 
 .overlay {

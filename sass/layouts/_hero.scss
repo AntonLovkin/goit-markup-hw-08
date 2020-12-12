@@ -16,7 +16,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/mobile/mobile/Hero.jpg);
+      url(./../images/mobile/mobile/Hero.jpg);
     background-size: 480px 400px;
   }
   @media screen and (min-device-pixel-ratio: 2),
@@ -24,14 +24,12 @@
     screen and (-o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.8)
-        ),
-        url(../../images/mobile/mobile/Hero@2x.jpg);
-    }
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(./../images/mobile/mobile/Hero@2x.jpg);
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 768px;
@@ -42,7 +40,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/tablet/tablet/Hero.jpg);
+      url(./../images/tablet/tablet/Hero.jpg);
     background-size: 768px 400px;
   }
   @media screen and (min-device-pixel-ratio: 2),
@@ -50,14 +48,12 @@
     screen and (-o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.8)
-        ),
-        url(../../images/tablet/tablet/Hero@2x.jpg);
-    }
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(./../images/tablet/tablet/Hero@2x.jpg);
   }
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
@@ -69,7 +65,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/hero.jpg);
+      url(./../images/hero.jpg);
     background-size: 1600px 600px;
   }
   @media screen and (min-device-pixel-ratio: 2),
@@ -77,14 +73,12 @@
     screen and (-o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.8)
-        ),
-        url(../../images/desktop/hero@2x.jpg);
-    }
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(./../images/desktop/hero@2x.jpg);
   }
 }
 .hero-title {

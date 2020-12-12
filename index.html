@@ -137,15 +137,12 @@
           <h2 class="mardgin-reset section-title comand">Наша команда</h2>
           <ul class="workers-team list">
         <li class="workers-list item">
-          
-            
-            <!-- <img src="./images/tablet/tablet/worker1.jpg" alt="Игорь Демьяненко" media="(min-width=768px)" /> -->
-
-          
-          <!-- <img src="./images/img(3).jpg" alt="Игорь Демьяненко" width="270" height="260" /> -->
-            <!-- <img src="./images/tablet/tablet/worker1.jpg" alt="Игорь Демьяненко" media="(min-width=768px)" />
-          <img src="./images/mobile/mobile/worker1.jpg" alt="Игорь Демьяненко" media="(min-width=768px)" /> -->
-          
+          <img class="img" srcset="
+          ./images/mobile/mobile/worker_1.jpg 1x, 
+          ./images/mobile/mobile/worker_1@2x.jpg 2x" 
+          src="./images/mobile/mobile/worker_1.jpg" 
+          alt="Игорь Демьяненко">
+             
           <h3 class="mardgin-reset name-title">Игорь Демьяненко</h3>
           <p class="mardgin-reset">Product Designer</p>
           <ul class="list social">
@@ -176,7 +173,10 @@
           </ul>
         </li>
         <li class="workers-list item">
-          <img src="./images/img(4).jpg" alt="Ольга Репина" width="270" height="260" />
+          <img class="img" srcset="
+                    ./images/mobile/mobile/worker_2.jpg 1x, 
+                    ./images/mobile/mobile/worker_2@2x.jpg 2x" src="./images/mobile/mobile/worker_2.jpg" alt="Ольга Репина">
+          <!-- <img src="./images/img(4).jpg" alt="Ольга Репина" width="270" height="260" /> -->
           <h3 class="mardgin-reset name-title">Ольга Репина</h3>
           <p class="mardgin-reset">Frontend Developer</p>
           <ul class="list social">
@@ -207,7 +207,11 @@
           </ul>
         </li>
         <li class="workers-list item">
-          <img src="./images/img(5).jpg" alt="Николай Тарасов" width="270" height="260" />
+          <img class="img" srcset="
+            ./images/mobile/mobile/worker_3.jpg 1x, 
+            ./images/mobile/mobile/worker_3@2x.jpg 2x" src="./images/mobile/mobile/worker_3.jpg"
+            alt="Николай Тарасов">
+          <!-- <img src="./images/img(5).jpg" alt="Николай Тарасов" width="270" height="260" /> -->
           <h3 class="mardgin-reset name-title">Николай Тарасов</h3>
           <p class="mardgin-reset">Marketing</p>
           <ul class="list social">
@@ -238,7 +242,11 @@
           </ul>
         </li>
         <li class="workers-list item">
-          <img src="./images/img(6).jpg" alt="Михаил Ермаков" width="270" height="260" />
+          <img class="img" srcset="
+            ./images/mobile/mobile/worker_4.jpg 1x, 
+            ./images/mobile/mobile/worker_4@2x.jpg 2x" src="./images/mobile/mobile/worker_.jpg"
+            alt="Михаил Ермаков">
+          <!-- <img src="./images/img(6).jpg" alt="Михаил Ермаков" width="270" height="260" /> -->
           <h3 class="mardgin-reset name-title">Михаил Ермаков</h3>
           <p class="mardgin-reset">UI Designer</p>
           <ul class="list social">
@@ -448,3 +456,26 @@
         <script src="./js/modal.js"></script>
   </body> 
 </html>
+<!-- <picture>
+            <source srcset="
+              ./../images/mobile/mobile/worker_1.jpg 1x,
+              ./../images/mobile/mobile/worker_1@2x.jpg 2x"
+              type="image/jpg" media="(max-width: 767px)" /> -->
+<!-- <source srcset="
+              ./images/mobile/mobile/worker_2.jpg 1x,
+              ./images/mobile/mobile/worker_2@2x.jpg 2x"
+               type="image/webp" media="(max-width: 1199px)" /> -->
+<!-- <source srcset="
+                              ./images/team/desktop/product-desinger.webp,
+                              ./images/team/desktop/product-desinger@2x.webp 2x
+                            " type="image/webp" media="(min-width: 1200px)" />
+            <source srcset="
+                              ./images/team/mobile/product-desinger.jpg,
+                              ./images/team/mobile/product-desinger@2x.jpg 2x
+                            " media="(max-width: 767px)" />
+            <source srcset="
+                              ./images/team/tablet/product-desinger.jpg,
+                              ./images/team/tablet/product-desinger@2x.jpg 2x
+                            " media="(max-width: 1199px)" />
+            <source srcset="./images/team/desktop/product-desinger@2x.jpg 2x" media="(min-width: 1200px)" /> -->
+<!-- <img class="team__image" src="./images/team/desktop/product-desinger.jpg" alt="Дизайнер продукта" width="270" /> -->
