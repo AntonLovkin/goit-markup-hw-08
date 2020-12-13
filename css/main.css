@@ -36,6 +36,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -160,19 +161,23 @@ img {
   width: 24px;
 }
 
-.mobile-menu-btn.is--open .menu-open {
+.mobile-menu-btn.is-open .menu-open {
+  opacity: 0;
+  visibility: hidden;
   display: none;
 }
 
-.mobile-menu-btn.is--open .menu-close {
+.mobile-menu-btn.is-open .menu-close {
+  opacity: 1;
+  visibility: visible;
   display: block;
 }
 
 .mobile-menu {
+  z-index: 5;
   position: absolute;
   top: 100%;
   width: 100%;
-  max-width: 480px;
   background-color: var(--background-header-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -187,7 +192,7 @@ img {
   }
 }
 
-.mobile-menu.is--open {
+.mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
 }
@@ -358,6 +363,7 @@ img {
 @media screen and (max-width: 1199px) {
   .modal {
     max-width: 450px;
+    overflow: auto;
   }
 }
 
@@ -468,8 +474,7 @@ img {
 }
 
 .modal-checkbox {
-  display: flex;
-  text-align: center;
+  display: block;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -710,7 +715,12 @@ img {
   background-color: var(--hover-text-color);
   height: 4px;
   border-radius: 2px;
-  margin-top: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .current::after {
+    margin-top: 28px;
+  }
 }
 
 /*hero*/
@@ -718,11 +728,13 @@ img {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
   height: 400px;
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .hero {
     max-width: 480px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(./../images/mobile/mobile/Hero.jpg);
@@ -736,7 +748,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .hero {
     max-width: 768px;
     margin-left: auto;
@@ -755,7 +767,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: auto;
-    height: 400px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.8)), url(./../images/hero.jpg);
@@ -813,7 +825,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
+    width: 100%;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -866,6 +879,8 @@ img {
 
 .work .item {
   max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.85;
@@ -1065,6 +1080,8 @@ img {
 @media screen and (max-width: 767px) {
   .workers-list {
     max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1158,11 +1175,8 @@ img {
   }
 }
 
-.clients h2 {
-  margin-bottom: 30px;
-}
-
 .link-list {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 0 0;
@@ -1172,10 +1186,16 @@ img {
 
 .link-item {
   width: 100%;
-  width: 210px;
   margin-left: 30px;
   margin-top: 30px;
   padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .link-item {
+    max-width: 210px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1458,7 +1478,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .head .item:first-child {
+  .head .item:not(:last-child) {
     margin-bottom: 8px;
   }
 }

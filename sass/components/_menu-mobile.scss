@@ -30,21 +30,22 @@
 .menu-open {
   width: 24px;
 }
-.mobile-menu-btn.is--open .menu-open {
-  //   opacity: 0;
-  //   visibility: hidden;
+.mobile-menu-btn.is-open .menu-open {
+  opacity: 0;
+  visibility: hidden;
   display: none;
 }
-.mobile-menu-btn.is--open .menu-close {
-  //   opacity: 1;
-  //   visibility: visible;
+.mobile-menu-btn.is-open .menu-close {
+  opacity: 1;
+  visibility: visible;
   display: block;
 }
 .mobile-menu {
+  z-index: 5;
   position: absolute;
   top: 100%;
   width: 100%;
-  max-width: 480px;
+  // max-width: 480px;
   background-color: var(--background-header-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -56,7 +57,7 @@
     display: none;
   }
 }
-.mobile-menu.is--open {
+.mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
 }

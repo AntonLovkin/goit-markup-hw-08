@@ -16,11 +16,14 @@
             <nav>
                 <ul class="site-nav list">
                     <li class="item">
-                        <a href="./index.html" class="link ">Студия</a></li>
+                        <a href="./index.html" class="link current">Студия</a>
+                    </li>
                     <li class="item">
-                        <a href="./portfolio.html" class="link current">Портфолио</a></li>
+                        <a href="./portfolio.html" class="link">Портфолио</a>
+                    </li>
                     <li class="item">
-                        <a href="#contacts" class="link">Контакты</a></li>
+                        <a href="#contacts" class="link">Контакты</a>
+                    </li>
                 </ul>
             </nav>
     
@@ -40,18 +43,21 @@
                 </li>
             </ul>
         </div>
-        <svg class="mobile-menu-btn">
+        <svg class="mobile-menu-btn" data-menu-button>
             <use class="menu-open" href="./images/sprite.svg#menu-button"></use>
             <use class="menu-close" href="./images/sprite.svg#close-menu"></use>
         </svg>
-        <div class="mobile-menu">
+        <div class="mobile-menu" data-menu>
             <ul class="mobile-menu-list">
                 <li class="mobile-menu-item">
-                    <a href="./index.html" class="mobile-menu-link link">Студия</a></li>
+                    <a href="./index.html" class="mobile-menu-link link ">Студия</a>
+                </li>
                 <li class="mobile-menu-item">
-                    <a href="./portfolio.html" class="mobile-menu-link link current">Портфолио</a></li>
+                    <a href="./portfolio.html" class="mobile-menu-link link current">Портфолио</a>
+                </li>
                 <li class="mobile-menu-item">
-                    <a href="#contacts" class="mobile-menu-link link">Контакты</a></li>
+                    <a href="#contacts" class="mobile-menu-link link">Контакты</a>
+                </li>
             </ul>
     
             <ul class="contacts-mobile-list">
@@ -92,7 +98,7 @@
                     <img class="img" srcset="
                         ./images/tablet/tablet/img1.jpg 1x, 
                         ./images/tablet/tablet/img1@2x.jpg 2x" 
-                        src="./images/tablet/tablet/img1.jpg" alt="example-1" media="(min-width: 600px)">
+                        src="./images/tablet/tablet/img1.jpg" alt="example-1">
                    <!-- <img class="img" src="./images/img(7).jpg" alt="example-1" width="370" height="294"> -->
                    <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифровогошпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -298,5 +304,6 @@
             </div>
         </section>
     </footer>
+    <script src="./js/menu-mobile.js"></script>
 </body>
 </html>
