@@ -51,8 +51,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 
 .link {
@@ -1102,6 +1101,18 @@ img {
   line-height: 1.22;
 }
 
+@media screen and (min-width: 768px) {
+  .workers-list img {
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .workers-list img {
+    height: 260px;
+  }
+}
+
 .name-title {
   margin-top: 30px;
   color: var(--second-text-color);
@@ -1501,6 +1512,7 @@ img {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
+  padding-right: 24px;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
@@ -1508,6 +1520,9 @@ img {
 
 .description .example {
   margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .category {
